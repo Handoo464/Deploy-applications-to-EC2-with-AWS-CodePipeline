@@ -30,7 +30,7 @@ pre : " <b> 2.2 </b> "
 
 4. Kiểm tra lại và chọn **Create bucket**
 
-![S3 bucket](/images/2/3.png)
+![S3 bucket](/images/2/2.2/3.png)
 
 5. Sau khi tạo bucket thành công.
     
@@ -63,7 +63,7 @@ pre : " <b> 2.2 </b> "
 }
 ```
 
-![S3 bucket](/images/2/4.png)
+![S3 bucket](/images/2/2.2/4.png)
 
 7. Sau đó chúng ta sẽ thấy S3 bucket được public.
 

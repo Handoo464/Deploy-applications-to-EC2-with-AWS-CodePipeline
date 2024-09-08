@@ -54,18 +54,18 @@ pre : " <b> 2.7. </b> "
 
 - Chọn **Next:Tags**
 
-![IAM user]![IAM user](/images/2/2.6/2.png)
+![IAM user](/images/2/2.7/2.png)
 
 3. Chọn **Next:Review**
 
 4. Nhập tên **policy** và chọn **Create policy**
 
-![IAM user]![IAM user](/images/2/2.6/3.png)
+![IAM user](/images/2/2.7/3.png)
 
 
 5. Hoàn thành tạo policy.
 
-![IAM user]![IAM user](/images/2/2.6/4.png)
+![IAM user](/images/2/2.7/4.png)
 
 6. Tiếp đến chúng ta sẽ tạo một role
     
@@ -73,21 +73,21 @@ pre : " <b> 2.7. </b> "
     - Chọn **Roles**
     - Chọn **Create role**
 
-![IAM user]![IAM user](/images/2/2.6/4.png)
+![IAM user](/images/2/2.7/5.png)
 
 7. Chọn **AWS service** là **EC2**. Chọn **Next**
 
-![IAM user]![IAM user](/images/2/2.6/5.png)
+![IAM user](/images/2/2.7/5.png)
 
 8. Tìm và chọn policy vừa tạo. Chọn **Next**
 
-![IAM user]![IAM user](/images/2/2.6/6.png)
+![IAM user](/images/2/2.7/6.png)
 9. Nhập tên **role**
 
 10. Chọn **Create role**
 
-![IAM user]![IAM user](/images/2/2.6/7.png)
+![IAM user](/images/2/2.7/7.png)
 
 11. Hoàn thành tạo role.
 
-![IAM user]![IAM user](/images/2/2.6/8.png)
+![IAM user](/images/2/2.7/8.png)

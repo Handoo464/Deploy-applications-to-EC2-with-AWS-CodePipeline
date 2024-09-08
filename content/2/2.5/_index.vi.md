@@ -14,7 +14,7 @@ pre : " <b> 2.5. </b> "
     
     - Chọn **Create role**
 
-![Service Role](/images/2/2.4/1.png)
+![Service Role](/images/2/2.5/1.png)
 
 2. Thực hiện cấu hình các bước tạo role
     
@@ -22,30 +22,30 @@ pre : " <b> 2.5. </b> "
     - Chọn **CodeDeploy**
     - Chọn **Next**
 
-![Service Role](/images/2/2.4/2.png)
+![Service Role](/images/2/2.5/2.png)
 
 3. Chọn **Next**
 
-![Service Role](/images/2/2.4/3.png)
+![Service Role](/images/2/2.5/3.png)
 
 4. Thực hiện nhập tên và tạo role
     
     - **Role name**, nhập **CodeDeployServiceRoleEC2**
     - Giữ nguyên phần mô tả.
 
-![Service Role](/images/2/2.4/4.png)
+![Service Role](/images/2/2.5/4.png)
 
 5. Chọn **Create role**
 
-![Service Role](/images/2/2.4/5.png)
+![Service Role](/images/2/2.5/5.png)
 
 6. Tạo role thành công.
 
-![Service Role](/images/2/2.4/6.png)
+![Service Role](/images/2/2.5/6.png)
 
 7. Sau khi tạo role, chúng ta sẽ thực hiện chỉnh sửa **Trust relationships**
 
-![Service Role](/images/2/2.4/7.png)
+![Service Role](/images/2/2.5/7.png)
 
 8. Thay bằng nội dung sau:
 
@@ -82,6 +82,6 @@ pre : " <b> 2.5. </b> "
 }
 ```
 
+![Service Role](/images/2/2.5/8.png)
 - Chọn **Update policy**
 
-![Service Role](/images/2/2.4/8.png)

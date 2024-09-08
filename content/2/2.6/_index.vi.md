@@ -10,24 +10,23 @@ pre : " <b> 2.6. </b> "
 
 1. Nếu bạn chưa có IAM user thì bạn sẽ tạo 1 IAM user.
 
-![IAM user](/images/2/2.5/1.png)
-![IAM user](/images/2/2.5/2.png)
-![IAM user](/images/2/2.5/3.png)
-![IAM user](/images/2/2.5/4.png)
-![IAM user](/images/2/2.5/5.png)
+![IAM user](/images/2/2.6/1.png)
+![IAM user](/images/2/2.6/2.png)
+![IAM user](/images/2/2.6/3.png)
+![IAM user](/images/2/2.6/4.png)
+![IAM user](/images/2/2.6/5.png)
 
 2. Sau đó tải **Access key** về để sử dụng **CLI**
-
-![IAM user](/images/2/2.5/6.png)
-![IAM user](/images/2/2.5/7.png)
-![IAM user](/images/2/2.5/8.png)
-![IAM user](/images/2/2.5/9.png)
+![IAM user](/images/2/2.6/6.png)
+![IAM user](/images/2/2.6/7.png)
+![IAM user](/images/2/2.6/8.png)
+![IAM user](/images/2/2.6/9.png)
 
 3. Sau đó chúng ta sẽ tạo **policy**.
 
-![IAM user](/images/2/2.5/14.png)
-![IAM user](/images/2/2.5/10.png)
-![IAM user](/images/2/2.5/11.png)
+![IAM user](/images/2/2.6/14.png)
+![IAM user](/images/2/2.6/10.png)
+![IAM user](/images/2/2.6/11.png)
 
 4. Chúng ta sẽ cấu hình policy như sau:
 
@@ -79,8 +78,8 @@ pre : " <b> 2.6. </b> "
 
 - Chọn **Review policy**
 
-![IAM user](/images/2/2.5/12.png)
+![IAM user](/images/2/2.6/12.png)
 
 5. Kiểm tra lại và sau đó nhập tên policy, chọn **Create policy**
 
-![IAM user](/images/2/2.5/13.png)
+![IAM user](/images/2/2.6/13.png)

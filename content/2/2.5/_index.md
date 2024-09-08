@@ -14,7 +14,7 @@ To do the labs, we need to create **Service role** for **CodeDeploy**
     
     - Select **Create role**
 
-![Service Role](/images/2/2.4/1.png)
+![Service Role](/images/2/2.5/1.png)
 
 2. Configure the role creation steps
     
@@ -22,30 +22,30 @@ To do the labs, we need to create **Service role** for **CodeDeploy**
     - Select **CodeDeploy**
     - Select **Next**
 
-![Service Role](/images/2/2.4/2.png)
+![Service Role](/images/2/2.5/2.png)
 
 3. Select **Next**
 
-![Service Role](/images/2/2.4/3.png)
+![Service Role](/images/2/2.5/3.png)
 
 4. Enter a name and create a role
     
     - **Role name**, enter **CodeDeployServiceRoleEC2**
     - Keep the description intact.
 
-![Service Role](/images/2/2.4/4.png)
+![Service Role](/images/2/2.5/4.png)
 
 5. Select **Create role**
 
-![Service Role](/images/2/2.4/5.png)
+![Service Role](/images/2/2.5/5.png)
 
 6. Create a successful role.
 
-![Service Role](/images/2/2.4/6.png)
+![Service Role](/images/2/2.5/6.png)
 
 7. After creating the role, we will edit **Trust relationships**
 
-![Service Role](/images/2/2.4/7.png)
+![Service Role](/images/2/2.5/7.png)
 
 8. Replace with the following content:
 
@@ -81,7 +81,7 @@ To do the labs, we need to create **Service role** for **CodeDeploy**
     ]
 }
 ```
+![Service Role](/images/2/2.5/8.png)
 
 - Select **Update policy**
 
-![Service Role](/images/2/2.4/8.png)

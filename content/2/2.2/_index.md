@@ -30,7 +30,7 @@ pre : " <b> 2.2 </b> "
 
 4. Check again and select **Create bucket**
 
-![S3 bucket](/images/2/3.png)
+![S3 bucket](/images/2/2.2/3.png)
 
 5. After creating the bucket successfully.
     
@@ -63,7 +63,7 @@ pre : " <b> 2.2 </b> "
 }
 ```
 
-![S3 bucket](/images/2/4.png)
+![S3 bucket](/images/2/2.2/4.png)
 
 7. Then we will see that the S3 bucket is public.
 
