@@ -10,16 +10,20 @@ pre : " <b> 3. </b> "
 
 Chúng ta sẽ cài đặt **CodeDeploy Agent**
 
+Bạn có 2 cách để thực hiện cấu hình CodeDeploy Agent cho EC2 của mình:
+- Session Manager
+- Add User Data
+
 1. Truy cập vào **EC2**
     
     - Chọn **EC2** mà bạn muốn triển khai ứng dụng.
     - Chọn **Connect**
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0001.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/5.png)
 
 2. Sau đó, chúng ta sẽ chuyển đến giao diện connect.
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0002.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/6.png)
 
 3. Thực hiện các lệnh sau đê cài đặt **CodeDeploy Agent**
 
@@ -47,11 +51,11 @@ sudo yum remove -y wget &&
 sudo service codedeploy-agent start
 ```
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0003.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/7.png)
 
 4. Hoàn thành cài **CodeDeploy Agent**
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0004.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/8.png)
 
 #### CodeDeploy Agent (Add User Data Cho EC2)
 

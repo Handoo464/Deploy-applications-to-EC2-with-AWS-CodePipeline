@@ -1,33 +1,91 @@
 ---
-title : "Attach role"
+title : "Create instance profile"
 date : "`r Sys.Date()`"
 weight : 7
 chapter : false
-pre : " <b> 2.7 </b> "
+pre : " <b> 2.7. </b> "
 ---
 
-#### Attach roles
+#### Create instance profile
 
-We will perform role assignment to EC2 instance.
-
-1. Access to **EC2**
+1. We will create IAM instance profile for Amazon EC2 instance
     
-    - Select **EC2** which you use to deploy the application
-    - Select **Actions**
-    - Select **Security**
+    - Access to **IAM**
+    - Select **Policies**
+    - Select **Create policy**
 
-![Attach IAM role](https://000023.awsstudygroup.com/images/2.2-attachrole/0001.png?featherlight=false&width=90pc)
+![IAM user](/images/2/2.6/1.png)
 
-2. Next we will choose **Modify IAM role**
+2. In the step of creating **policy**, enter the content policy
 
-![Attach IAM role](https://000023.awsstudygroup.com/images/2.2-attachrole/0002.png?featherlight=false&width=90pc)
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Resources": [
+        "arn:aws:s3:::replace-with-your-s3-bucket-name/*",
+        "arn:aws:s3:::aws-codedeploy-us-east-2/*",
+        "arn:aws:s3:::aws-codedeploy-us-east-1/*",
+        "arn:aws:s3:::aws-codedeploy-us-west-1/*",
+        "arn:aws:s3:::aws-codedeploy-us-west-2/*",
+        "arn:aws:s3:::aws-codedeploy-ca-central-1/*",
+        "arn:aws:s3:::aws-codedeploy-eu-west-1/*",
+        "arn:aws:s3:::aws-codedeploy-eu-west-2/*",
+        "arn:aws:s3:::aws-codedeploy-eu-west-3/*",
+        "arn:aws:s3:::aws-codedeploy-eu-central-1/*",
+        "arn:aws:s3:::aws-codedeploy-ap-east-1/*",
+        "arn:aws:s3:::aws-codedeploy-ap-northeast-1/*",
+        "arn:aws:s3:::aws-codedeploy-ap-northeast-2/*",
+        "arn:aws:s3:::aws-codedeploy-ap-southeast-1/*",
+        "arn:aws:s3:::aws-codedeploy-ap-southeast-2/*",
+        "arn:aws:s3:::aws-codedeploy-ap-south-1/*",
+        "arn:aws:s3:::aws-codedeploy-sa-east-1/*"
+      ]
+    }
+  ]
+}
+```
 
-3. In **Modify IAM role** step
+- Select **Next:Tags**
 
-- Select **CodeDeploy-EC2-Instance-Profile**
+![IAM user]![IAM user](/images/2/2.6/2.png)
 
-![Attach IAM role](https://000023.awsstudygroup.com/images/2.2-attachrole/0003.png?featherlight=false&width=90pc)
+3. Select **Next:Review**
 
-4. Select **Update IAM role**
+4. Enter **policy** and select **Create policy**
 
-![Attach IAM role](https://000023.awsstudygroup.com/images/2.2-attachrole/0004.png?featherlight=false&width=90pc)
+![IAM user]![IAM user](/images/2/2.6/3.png)
+5. Complete policy creation.
+
+![IAM user]![IAM user](/images/2/2.6/4.png)
+6. Next we will create a role
+    
+    - Access to **IAM**
+    - Select **Roles**
+    - Select **Create role**
+
+![IAM user]![IAM user](/images/2/2.6/4.png)
+
+7. Select **AWS service** as **EC2**. Select **Next**
+
+![IAM user]![IAM user](/images/2/2.6/5.png)
+
+8. Find and select the newly created policy. Select **Next**
+
+![IAM user]![IAM user](/images/2/2.6/6.png)
+
+9. Enter the name **role**
+
+10. Select **Create role**
+
+![IAM user]![IAM user](/images/2/2.6/7.png)
+
+11. Complete role creation.
+
+![IAM user]![IAM user](/images/2/2.6/8.png)

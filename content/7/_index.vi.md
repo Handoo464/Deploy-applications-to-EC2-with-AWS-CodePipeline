@@ -21,7 +21,7 @@ Sau khi sử dụng **AWS CodeCommit** để đẩy code lên từ máy local,
     - Tạo một **service role** cho **AWS CodePipeline**
     - Chọn **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0002.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/8.png)
 
 3. Đối với phần **Advanced settings**
     
@@ -29,7 +29,7 @@ Sau khi sử dụng **AWS CodeCommit** để đẩy code lên từ máy local,
     - Chọn **bucket**
     - Chọn **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0003.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/9.png)
 
 4. Đối với **AWS source stage**
     
@@ -38,7 +38,7 @@ Sau khi sử dụng **AWS CodeCommit** để đẩy code lên từ máy local,
     - Đối với **Branch name**, chọn **master**
     - Chọn **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0004.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/10.png)
 
 5. Đối với phần build
     
@@ -57,11 +57,11 @@ Sau khi sử dụng **AWS CodeCommit** để đẩy code lên từ máy local,
     - Chọn **Deployment group**
     - Chọn **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0006.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/11.png)
 
 7. Chọn **Create pipeline**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0007.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/12.png)
 
 8. Sau khi tạo thành công pipeline, bạn sẽ mất khoảng 10 phút để hoàn thành pipeline.
 

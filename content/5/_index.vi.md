@@ -6,21 +6,24 @@ chapter : false
 pre : " <b> 5. </b> "
 ---
 
+Chúng tôi sẽ sử dụng repository **[AWS First Cloud Journey](https://github.com/Handoo464/PIPELINE)** này cho demo. Bạn có thể tải lên github của bạn để sử dụng cho các bước thực hiện tiếp theo khi cần sử dụng kết nối với GitHub.
+
 #### AWS CodeBuild
 
 1. Truy cập vào **AWS CodeBuild**
     
     - Chọn **Create project**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0001.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/3.png)
 
 2. Trong giao diện **Create build project**
 
 - **Project name**, nhập **AWS-FCJ-APP**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0002.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/4.png)
 
 3. Cấu hình _Source_*
+
 {{%notice info%}}
 Demo code này mang tính chất đơn giản cho bạn hiểu rõ những thứ cần thiết cho quá trình build, deploy.
 {{%/notice%}}
@@ -41,22 +44,22 @@ Demo code này mang tính chất đơn giản cho bạn hiểu rõ những thứ
     - Chọn kiểu môi trường là **Linux**
     - Tick chọn vào **Enable** Privileged.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0004.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/5.png)
 
 5. Tạo Service role hoặc chọn **Service role** bạn đã tạo.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0005.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/6.png)
 
 6. Tiếp theo, chúng ta sẽ cấu hình dường đường dẫn **Buildspec**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0006.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/7.png)
 
 7. Đối với **Artifact**
     
     - Chúng ta chọn lưu trữ tại **S3**
     - Chọn **bucket** đã tạo.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0007.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/8.png)
 
 8. Đối với **Logs**
     
@@ -64,11 +67,11 @@ Demo code này mang tính chất đơn giản cho bạn hiểu rõ những thứ
     - Group name: **aws-cicd-ec2-group**
     - Stream name: **aws-cicd-ec2-stream**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0008.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/9.png)
 
 9. Chúng ta đã tạo thành công **AWS CodeBuild project**. Để kiểm tra cấu hình đã đúng, thử **Start build**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0009.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/10.png)
 
 10. Đợi khoảng 5 phút sau, chọn **Phase details** để xem quá trình build project.
 

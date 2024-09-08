@@ -6,71 +6,73 @@ chapter : false
 pre : " <b> 5. </b> "
 ---
 
-#### AWS CodeBuild
+We will use the **[AWS First Cloud Journey](https://github.com/Handoo464/PIPELINE)** repository for this demo. You can upload it to your own GitHub repository for use in the following steps when connecting with GitHub is required.
 
-1. Truy cập vào **AWS CodeBuild**
-    
-    - Chọn **Create project**
+### AWS CodeBuild Setup
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0001.png?featherlight=false&width=90pc)
+1. **Access AWS CodeBuild**
 
-2. Trong giao diện **Create build project**
+    - Click on **Create project**
 
-- **Project name**, nhập **AWS-FCJ-APP**
+![CodeBuild](/images/5/3.png)
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0002.png?featherlight=false&width=90pc)
+2. In the **Create build project** interface
 
-3. Cấu hình _Source_*
+- For **Project name**, enter **AWS-FCJ-APP**
+
+![CodeBuild](/images/5/4.png)
+
+3. Configure the **Source**
 
 {{%notice info%}}
-Demo code này mang tính chất đơn giản cho bạn hiểu rõ những thứ cần thiết cho quá trình build, deploy.
+This demo code is simplified to help you understand the essentials of the build and deploy process.
 {{%/notice%}}
     
-    - Chọn **Source provider** là **AWS CodeCommit**
-    - Chọn **Repository** là **AWS-Pipeline-EC2**
-    - Chọn **Branch**
-    - Chọn **master**
+    - Select **Source provider** as **GitHub**
+    - Choose **Repository** as **PIPELINE**
+    - Choose **Branch**
+    - Select **main**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0003.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/1.png)
 
-4. Đối với **Environment**
-    
-    - Chọn **Managed image**
-    - Chọn **Operating system** là **Amazon Linux 2**
-    - Chọn **Run time** là **Standard**
-    - Chọn **Image**
-    - Chọn kiểu môi trường là **Linux**
-    - Tick chọn vào **Enable** Privileged.
+4. For the **Environment**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0004.png?featherlight=false&width=90pc)
+    - Select **Managed image**
+    - Choose **Operating system** as **Amazon Linux 2**
+    - Select **Run time** as **Standard**
+    - Choose **Image**
+    - Set the environment type to **Linux**
+    - Check **Enable** Privileged mode.
 
-5. Tạo Service role hoặc chọn **Service role** bạn đã tạo.
+![CodeBuild](/images/5/5.png)
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0005.png?featherlight=false&width=90pc)
+5. Create a Service role or select an existing **Service role** that you have already created.
 
-6. Tiếp theo, chúng ta sẽ cấu hình dường đường dẫn **Buildspec**
+![CodeBuild](/images/5/6.png)
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0006.png?featherlight=false&width=90pc)
+6. Next, we will configure the **Buildspec** path.
 
-7. Đối với **Artifact**
-    
-    - Chúng ta chọn lưu trữ tại **S3**
-    - Chọn **bucket** đã tạo.
+![CodeBuild](/images/5/7.png)
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0007.png?featherlight=false&width=90pc)
+7. For the **Artifact**
 
-8. Đối với **Logs**
-    
-    - Chúng ta sử dụng **CloudWatch logs**
-    - Group name: **aws-cicd-ec2-group**
-    - Stream name: **aws-cicd-ec2-stream**
+    - We will store it in **S3**
+    - Select the **bucket** that you have created.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0008.png?featherlight=false&width=90pc)
+![CodeBuild](/images/5/8.png)
 
-9. Chúng ta đã tạo thành công **AWS CodeBuild project**. Để kiểm tra cấu hình đã đúng, thử **Start build**
+8. For the **Logs**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/5-codebuild/0009.png?featherlight=false&width=90pc)
+    - We will use **CloudWatch logs**
+    - Group name: **aws-cicd-ec2-group**
+    - Stream name: **aws-cicd-ec2-stream**
 
-10. Đợi khoảng 5 phút sau, chọn **Phase details** để xem quá trình build project.
+![CodeBuild](/images/5/9.png)
+
+9. We have successfully created the **AWS CodeBuild project**. To verify that the configuration is correct, try **Start build**.
+
+![CodeBuild](/images/5/10.png)
+
+10. Wait for about 5 minutes, then select **Phase details** to view the project build process.
 
 ![CodeBuild](/images/5/2.png)

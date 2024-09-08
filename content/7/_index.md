@@ -22,7 +22,7 @@ After using **AWS CodeCommit** to push the code from the local machine, we bui
     - Create a **service role** for **AWS CodePipeline**
     - Select **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0002.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/8.png)
 
 3. For the **Advanced settings** section
     
@@ -30,7 +30,7 @@ After using **AWS CodeCommit** to push the code from the local machine, we bui
     - Select **bucket**
     - Select **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0003.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/9.png)
 
 4. For **AWS source stage**
     
@@ -39,7 +39,7 @@ After using **AWS CodeCommit** to push the code from the local machine, we bui
     - For **Branch name**, select **master**
     - Select **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0004.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/10.png)
 
 5. For the build
     
@@ -58,11 +58,11 @@ After using **AWS CodeCommit** to push the code from the local machine, we bui
     - Select **Deployment group**
     - Select **Next**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0006.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/11.png)
 
 7. Select **Create pipeline**
 
-![CodePipeline](https://000023.awsstudygroup.com/images/7-codepipeline/0007.png?featherlight=false&width=90pc)
+![CodePipeline](/images/7/12.png)
 
 8. After successfully creating the pipeline, it will take you about 10 minutes to complete the pipeline.
 

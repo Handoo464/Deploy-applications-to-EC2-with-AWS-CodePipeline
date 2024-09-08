@@ -11,25 +11,25 @@ pre : " <b> 6. </b> "
     
     - Chọn **Create application**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0001.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/6.png)
 
 2. Trong giao diện **Create application**
     
     - Đối với **Application name**, nhập **AWS-FCJ-APP**
     - Đối với **Compute platform**, chúng ta sẽ chọn **EC2/On-Premises**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0002.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/7.png)
 
 3. Chúng ta sẽ tạo **Deployment groups** để thực hiện deployment ứng dụng.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0003.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/8.png)
 
 4. Thực hiện cấu hình **Deployment group**
     
     - Nhập **Deployment group name**
     - Nhập **Service role**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0004.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/9.png)
 
 5. Đối với **Deployment type**
     
@@ -37,7 +37,7 @@ pre : " <b> 6. </b> "
     - Đối với môi trường triển khai là **Amazon EC2 instances**
     - Chọn theo tag group, chọn các key và value phù hợp với **EC2** mà bạn muốn dùng triển khai ứng dụng.
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0005.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/10.png)
 
 6. Đối với cài đặt **Install AWS CodeDeploy Agent**
     
@@ -45,18 +45,18 @@ pre : " <b> 6. </b> "
     - Đối với **Deployment settings**, chọn **CodeDeployDefault.OneAtATime**
     - Chọn **Create deployment group**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0006.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/11.png)
 
 7. Hoàn thành tạo **Deployment group**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0007.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/12.png)
 
 8. Chúng ta sẽ quay lại **Applications**
     
     - Chọn ứng dụng đã chuẩn bị.
     - Chọn **Deploy application**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0008.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/13.png)
 
 9. Chúng ta sẽ cung cấp các thông tin **Create deployment**
     
@@ -65,11 +65,11 @@ pre : " <b> 6. </b> "
     - Và đối với **Revision location** chọn dẫn của **S3 bucket**
     - Dạng file sẽ là **.zip**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/0009.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/14.png)
 
 10. Kiểm tra lại và chọn **Create deployment**
 
-![CodeBuild](https://000023.awsstudygroup.com/images/6-codedeploy/00010.png?featherlight=false&width=90pc)
+![CodeBuild](/images/6/15.png)
 
 11. Sau thời gian khoảng 5 phút.
 
@@ -85,4 +85,8 @@ pre : " <b> 6. </b> "
 
 ![CodeBuild](/images/6/3.png)
 ![CodeBuild](/images/6/4.png)
+
+{{%notice tip%}}
+Hãy nhớ truy cập đường dẫn với http chứ không phải https
+{{%/notice%}}
 ![CodeBuild](/images/6/5.png)

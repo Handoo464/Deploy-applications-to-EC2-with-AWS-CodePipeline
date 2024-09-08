@@ -5,8 +5,6 @@ weight : 1
 chapter : false
 ---
 
-# Deploy applications to EC2 with AWS CodePipeline
-
 Many organizations and companies have turned to DevOps practices, a combination of philosophies, practices, and cultural tools to increase your organization’s ability to deliver applications and services at high speed. ; for example, develop and improve products at a faster rate than organizations using traditional software development and infrastructure management processes.
 
 ![S3 bucket](https://000023.awsstudygroup.com/images/1.1-s3/0008.png?featherlight=false&width=90pc)

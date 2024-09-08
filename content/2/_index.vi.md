@@ -8,11 +8,12 @@ pre : " <b> 2. </b> "
 
 #### Các bước chuẩn bị
 
-1. [Chuẩn bị hạ tầng](https://000023.awsstudygroup.com/vi/2-prerequiste/2.1-infra/)
-2. [Tạo S3 bucket](https://000023.awsstudygroup.com/vi/2-prerequiste/2.2-creates3bucket/)
-3. [Tạo Git credentials](https://000023.awsstudygroup.com/vi/2-prerequiste/2.3-credential/)
-4. [Tạo Service role](https://000023.awsstudygroup.com/vi/2-prerequiste/2.4-createservicerole/)
-5. [Tạo IAM user](https://000023.awsstudygroup.com/vi/2-prerequiste/2.5-provision/)
-6. [Tạo instance profile](https://000023.awsstudygroup.com/vi/2-prerequiste/2.6-instanceprofile/)
-7. [Gán role](https://000023.awsstudygroup.com/vi/2-prerequiste/2.7-attachrole/)
+1. [Chuẩn bị hạ tầng](2.1/)
+2. [Tạo S3 bucket](2.2/)
+3. [Tạo Git credentials](2.3/)
+4. [Tạo Git connection](2.4/)
+4. [Tạo Service role](2.5/)
+5. [Tạo IAM user](2.6/)
+6. [Tạo instance profile](2.7/)
+7. [Gán role](2.8)
   

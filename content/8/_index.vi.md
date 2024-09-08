@@ -2,7 +2,7 @@
 title : "Khắc phục lỗi"
 date :  "`r Sys.Date()`" 
 weight : 8
-chapter : 8
+chapter : false
 pre : " <b> 8. </b> "
 ---
 #### Khắc phục lỗi

@@ -1,87 +1,87 @@
 ---
-title : "Provision an IAM user"
+title : "Create Service Role"
 date :  "`r Sys.Date()`" 
-weight : 5
+weight : 5.
 chapter : false
 pre : " <b> 2.5. </b> "
 ---
 
-#### Provision an IAM user
+#### Create Service Role for CodeDeploy
 
-1. If you do not have an IAM user, you will create an IAM user.
+To do the labs, we need to create **Service role** for **CodeDeploy**
 
-![IAM user](/images/2/2.5/1.png)
-![IAM user](/images/2/2.5/2.png)
-![IAM user](/images/2/2.5/3.png)
-![IAM user](/images/2/2.5/4.png)
-![IAM user](/images/2/2.5/5.png)
+1. Access to **IAM**
+    
+    - Select **Create role**
 
-2. Then download **Access key** to use **CLI**
-![IAM user](/images/2/2.5/6.png)
-![IAM user](/images/2/2.5/7.png)
-![IAM user](/images/2/2.5/8.png)
-![IAM user](/images/2/2.5/9.png)
+![Service Role](/images/2/2.4/1.png)
 
+2. Configure the role creation steps
+    
+    - Select **AWS service**
+    - Select **CodeDeploy**
+    - Select **Next**
 
+![Service Role](/images/2/2.4/2.png)
 
-3. Then we will create **policy**.
+3. Select **Next**
 
-![IAM user](/images/2/2.5/14.png)
-![IAM user](/images/2/2.5/10.png)
-![IAM user](/images/2/2.5/11.png)
+![Service Role](/images/2/2.4/3.png)
 
-4. We will configure the policy as follows:
+4. Enter a name and create a role
+    
+    - **Role name**, enter **CodeDeployServiceRoleEC2**
+    - Keep the description intact.
+
+![Service Role](/images/2/2.4/4.png)
+
+5. Select **Create role**
+
+![Service Role](/images/2/2.4/5.png)
+
+6. Create a successful role.
+
+![Service Role](/images/2/2.4/6.png)
+
+7. After creating the role, we will edit **Trust relationships**
+
+![Service Role](/images/2/2.4/7.png)
+
+8. Replace with the following content:
 
 ```
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "CodeDeployAccessPolicy",
-      "Effect": "Allow",
-      "Action": [
-        "autoscaling:*",
-        "codedeploy:*",
-        "ec2:*",
-        "lambda:*",
-        "ecs:*",
-        "elasticloadbalancing:*",
-        "iam:AddRoleToInstanceProfile",
-        "iam:AttachRolePolicy",
-        "iam:CreateInstanceProfile",
-        "iam:CreateRole",
-        "iam:DeleteInstanceProfile",
-        "iam:DeleteRole",
-        "iam:DeleteRolePolicy",
-        "iam:GetInstanceProfile",
-        "iam:GetRole",
-        "iam:GetRolePolicy",
-        "iam:ListInstanceProfilesForRole",
-        "iam:ListRolePolicies",
-        "iam:ListRoles",
-        "iam:PutRolePolicy",
-        "iam:RemoveRoleFromInstanceProfile",
-        "s3:*",
-        "ssm:*"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "CodeDeployRolePolicy",
-      "Effect": "Allow",
-      "Action": [
-        "iam:PassRole"
-      ],
-      "Resource": "arn:aws:iam::account-ID:role/CodeDeployServiceRole"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "codedeploy.us-east-2.amazonaws.com",
+                    "codedeploy.us-east-1.amazonaws.com",
+                    "codedeploy.us-west-1.amazonaws.com",
+                    "codedeploy.us-west-2.amazonaws.com",
+                    "codedeploy.eu-west-3.amazonaws.com",
+                    "codedeploy.ca-central-1.amazonaws.com",
+                    "codedeploy.eu-west-1.amazonaws.com",
+                    "codedeploy.eu-west-2.amazonaws.com",
+                    "codedeploy.eu-central-1.amazonaws.com",
+                    "codedeploy.ap-east-1.amazonaws.com",
+                    "codedeploy.ap-northeast-1.amazonaws.com",
+                    "codedeploy.ap-northeast-2.amazonaws.com",
+                    "codedeploy.ap-southeast-1.amazonaws.com",
+                    "codedeploy.ap-southeast-2.amazonaws.com",
+                    "codedeploy.ap-south-1.amazonaws.com",
+                    "codedeploy.sa-east-1.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
 }
 ```
 
-- Select **Review policy**
+- Select **Update policy**
 
-![IAM user](/images/2/2.5/12.png)
-
-5. Check again and then enter the policy name, select **Create policy**
-
-![IAM user](/images/2/2.5/13.png)
+![Service Role](/images/2/2.4/8.png)

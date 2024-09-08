@@ -22,15 +22,15 @@ pre : " <b> 2.2 </b> "
     - Nhập **Bucket name**
     - Chọn **Region**
 
-![S3 bucket](https://000023.awsstudygroup.com/images/1.1-s3/0002.png?featherlight=false&width=90pc)
+![S3 bucket](/images/2/1.png)
 
 3. Bỏ chọn **Block Public Access**
 
-![S3 bucket](https://000023.awsstudygroup.com/images/1.1-s3/0003.png?featherlight=false&width=90pc)
+![S3 bucket](/images/2/2.png)
 
 4. Kiểm tra lại và chọn **Create bucket**
 
-![S3 bucket](https://000023.awsstudygroup.com/images/1.1-s3/0004.png?featherlight=false&width=90pc)
+![S3 bucket](/images/2/3.png)
 
 5. Sau khi tạo bucket thành công.
     
@@ -63,7 +63,7 @@ pre : " <b> 2.2 </b> "
 }
 ```
 
-![S3 bucket](https://000023.awsstudygroup.com/images/1.1-s3/0006.png?featherlight=false&width=90pc)
+![S3 bucket](/images/2/4.png)
 
 7. Sau đó chúng ta sẽ thấy S3 bucket được public.
 

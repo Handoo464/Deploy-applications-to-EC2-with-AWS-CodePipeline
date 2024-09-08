@@ -18,17 +18,6 @@ pre : " <b> 9. </b> "
 - Select **Terminate**.
 - Click **Change State**
 
-#### Delete DB Instance
-
-- Access **RDS Management Console**
-- On the left navigation bar, select **Databases**
-- Select all **DB Instance** related to the lab.
-- Click **Actions**.
-- Click **Delete**
-- Uncheck **Create final snapshot? and select I acknowledge that upon instance deletion, automated backups, including system snapshots and point-in-time recovery, will no longer be available**
-- Type **delete me** in the empty box.
-- Click **Delete**.
-
 #### Delete Security Group
 
 - Access **EC2 Management Console**
@@ -37,10 +26,6 @@ pre : " <b> 9. </b> "
 - Click **Actions**.
 - Click **Delete security groups**
 - Click **Delete**
-
-#### Delete AWS CodeCommit Repository
-
-[Delete AWS CodeCommit Repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html)
 
 #### Remove AWS CodeBuild Project
 

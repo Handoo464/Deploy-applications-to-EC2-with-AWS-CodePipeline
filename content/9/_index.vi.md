@@ -1,51 +1,51 @@
 ---
-title : "Clean up resources"
+title : "Dọn dẹp tài nguyên"
 date :  "`r Sys.Date()`" 
 weight : 9
 chapter : false
 pre : " <b> 9. </b> "
 ---
 
-#### Clean up resources
+### Dọn dẹp tài nguyên
 
 #### Terminate EC2 instance
 
-- Access **EC2 Management Console**
-- On the left navigation bar, select **Intances**
-- Select **all EC2 Instance** related to the lab.
-- Click **Actions**.
-- Click **Manage Instance State**.
-- Select **Terminate**.
-- Click **Change State**
+- Truy cập vào **EC2 Management Console**
+- Ở thanh điều hướng bên trái, chọn **Instances**
+- Chọn **tất cả các EC2 Instance** liên quan đến lab.
+- Nhấn **Actions**.
+- Nhấn **Manage Instance State**.
+- Chọn **Terminate**.
+- Nhấn **Change State**.
 
 #### Delete DB Instance
 
-- Access **RDS Management Console**
-- On the left navigation bar, select **Databases**
-- Select all **DB Instance** related to the lab.
-- Click **Actions**.
-- Click **Delete**
-- Uncheck **Create final snapshot? and select I acknowledge that upon instance deletion, automated backups, including system snapshots and point-in-time recovery, will no longer be available**
-- Type **delete me** in the empty box.
-- Click **Delete**.
+- Truy cập vào **RDS Management Console**
+- Ở thanh điều hướng bên trái, chọn **Databases**
+- Chọn tất cả **DB Instance** liên quan đến lab.
+- Nhấn **Actions**.
+- Nhấn **Delete**.
+- Bỏ chọn **Create final snapshot?** và chọn **I acknowledge that upon instance deletion, automated backups, including system snapshots and point-in-time recovery, will no longer be available**.
+- Nhập **delete me** vào ô trống.
+- Nhấn **Delete**.
 
 #### Delete Security Group
 
-- Access **EC2 Management Console**
-- On the left navigation bar, select **Security Groups**
-- Select all **Security Groups** related to the lab.
-- Click **Actions**.
-- Click **Delete security groups**
-- Click **Delete**
+- Truy cập vào **EC2 Management Console**
+- Ở thanh điều hướng bên trái, chọn **Security Groups**.
+- Chọn tất cả **Security Groups** liên quan đến lab.
+- Nhấn **Actions**.
+- Nhấn **Delete security groups**.
+- Nhấn **Delete**.
 
-#### Delete AWS CodeCommit Repository
+#### Xóa AWS CodeCommit Repository
 
-[Delete AWS CodeCommit Repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html)
+[Xóa AWS CodeCommit Repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html)
 
-#### Remove AWS CodeBuild Project
+#### Xóa AWS CodeBuild Project
 
-[Delete AWS CodeBuild Project](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-project.html)
+[Xóa AWS CodeBuild Project](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-project.html)
 
-#### Remove AWS CodePipeline
+#### Xóa AWS CodePipeline
 
-[Delete Pipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-delete.html)
+[Xóa Pipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-delete.html)

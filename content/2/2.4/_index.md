@@ -1,87 +1,69 @@
 ---
-title : "Create Service Role"
+title : "Create Git Conection"
 date :  "`r Sys.Date()`" 
 weight : 4
 chapter : false
-pre : " <b> 2.4 </b> "
+pre : " <b> 2.4. </b> "
 ---
 
-#### Create Service Role for CodeDeploy
+## Create a connection to GitHub (console)
 
-To do the labs, we need to create **Service role** for **CodeDeploy**
+You can use the console to create a connection to GitHub.
 
-1. Access to **IAM**
+###### Note
+
+Currently, if you use the console to create a connection, this will only create resources with `codestar-connections` in the resource ARN. To create a resource that will have the `codeconnections` service prefix in the ARN, use the CLI, SDK, or CFN. Resources with both service prefixes will still display in the console. Console resource creation will be available beginning July 1, 2024.
+
+1. Sign in to the AWS Management Console, and open the Developer Tools console at [https://console.aws.amazon.com/codesuite/settings/connections](https://console.aws.amazon.com/codesuite/settings/connections).
     
-    - Select **Create role**
-
-![Service Role](/images/2/2.4/1.png)
-
-2. Configure the role creation steps
+2. Choose **Settings > Connections**, and then choose **Create connection**.
     
-    - Select **AWS service**
-    - Select **CodeDeploy**
-    - Select **Next**
-
-![Service Role](/images/2/2.4/2.png)
-
-3. Select **Next**
-
-![Service Role](/images/2/2.4/3.png)
-
-4. Enter a name and create a role
+3. To create a connection to a GitHub or GitHub Enterprise Cloud repository, under **Select a provider**, choose **GitHub**. In **Connection name**, enter the name for the connection that you want to create. Choose **Connect to GitHub**, and proceed to Step 2.
     
-    - **Role name**, enter **CodeDeployServiceRoleEC2**
-    - Keep the description intact.
+    ![Console screenshot showing connection option selected for GitHub.](/images/2/2.4/2.png)
+    
 
-![Service Role](/images/2/2.4/4.png)
+###### To create a connection to GitHub
 
-5. Select **Create role**
+1. Under **GitHub connection settings**, your connection name appears in **Connection name**. Choose **Connect to GitHub**. The access request page appears.
+    
+    ![Console screenshot showing the GitHub account access page.](/images/2/2.4/1.png)
+    
+2. Choose **Authorize AWS Connector for GitHub**. The connection page displays and shows the **GitHub Apps** field.
+    
+    ![Console screenshot showing the initial GitHub connection page with the GitHub Apps field.](/images/2/2.4/3.png)
+    
+3. Under **GitHub Apps**, choose an app installation or choose **Install a new app** to create one.
+    
+    You install one app for all of your connections to a particular provider. If you have already installed the AWS Connector for GitHub app, choose it and skip this step.
+    
+    ###### Note
+    
+    If you want to create a [user access token](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app), make sure that you've already installed the AWS Connector for GitHub app and then leave the App installation field empty. CodeConnections will use the user access token for the connection.
+    
+4. On the Install **AWS Connector for GitHub** page, choose the account where you want to install the app.
+    
+    ![Console screenshot showing the AWS Connector for GitHub installation page.](/images/2/2.4/4.png)
+    
+    ###### Note
+    
+    You only install the app once for each GitHub account. If you previously installed the app, you can choose **Configure** to proceed to a modification page for your app installation, or you can use the back button to return to the console.
+    
+5. On the **Install AWS Connector for GitHub** page, leave the defaults, and choose **Install**.
+    
+    ![Console screenshot showing the second AWS Connector for GitHub installation page.](/images/2/2.4/5.png)
+    
+    After this step, an updated permissions page might display in GitHub.
+    
+6. If a page displays showing that there are updated permissions for the AWS Connector for GitHub app, choose **Accept new permissions**.
+    
+    ![Console screenshot showing the AWS Connector for GitHub updated permissions page.](/images/2/2.4/6.png)
+    
+7. You are returned to the **Connect to GitHub** page. The connection ID for your new installation appears in **GitHub Apps**. Choose **Connect**.
+    
 
-![Service Role](/images/2/2.4/5.png)
+### View your created connection
 
-6. Create a successful role.
-
-![Service Role](/images/2/2.4/6.png)
-
-7. After creating the role, we will edit **Trust relationships**
-
-![Service Role](/images/2/2.4/7.png)
-
-8. Replace with the following content:
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "",
-            "Effect": "Allow",
-            "Principal": {
-                "Service": [
-                    "codedeploy.us-east-2.amazonaws.com",
-                    "codedeploy.us-east-1.amazonaws.com",
-                    "codedeploy.us-west-1.amazonaws.com",
-                    "codedeploy.us-west-2.amazonaws.com",
-                    "codedeploy.eu-west-3.amazonaws.com",
-                    "codedeploy.ca-central-1.amazonaws.com",
-                    "codedeploy.eu-west-1.amazonaws.com",
-                    "codedeploy.eu-west-2.amazonaws.com",
-                    "codedeploy.eu-central-1.amazonaws.com",
-                    "codedeploy.ap-east-1.amazonaws.com",
-                    "codedeploy.ap-northeast-1.amazonaws.com",
-                    "codedeploy.ap-northeast-2.amazonaws.com",
-                    "codedeploy.ap-southeast-1.amazonaws.com",
-                    "codedeploy.ap-southeast-2.amazonaws.com",
-                    "codedeploy.ap-south-1.amazonaws.com",
-                    "codedeploy.sa-east-1.amazonaws.com"
-                ]
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
-}
-```
-
-- Select **Update policy**
-
-![Service Role](/images/2/2.4/8.png)
+- The created connection displays in the connections list.
+    
+    ![Console screenshot showing connections listing with successfully created connection.](/images/2/2.4/7.png)

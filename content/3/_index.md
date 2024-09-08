@@ -1,5 +1,5 @@
 ---
-title : "Connect to EC2 servers"
+title : "CodeDeploy Agent"
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
@@ -10,16 +10,21 @@ pre : " <b> 3. </b> "
 
 We will install **CodeDeploy Agent**
 
+You have 2 ways to configure the CodeDeploy Agent for your EC2:
+
+- Session Manager
+- Add User Data
+
 1. Access to **EC2**
     
     - Select **EC2** to which you want to deploy the application.
     - Select **Connect**
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0001.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/5.png)
 
 2. Then we will move to the connecting interface.
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0002.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/6.png)
 
 3. Execute the following commands to install **CodeDeploy Agent**
 
@@ -47,11 +52,11 @@ sudo yum remove -y wget &&
 sudo service codedeploy-agent start
 ```
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0003.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/7.png)
 
 4. Complete installation of **CodeDeploy Agent**
 
-![CodeDeploy Agent](https://000023.awsstudygroup.com/images/3.2-codedeployagent/0004.png?featherlight=false&width=90pc)
+![CodeDeploy Agent](/images/3/8.png)
 
 #### CodeDeploy Agent (Add User Data For EC2)
 
